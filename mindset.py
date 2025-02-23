@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 
 # Page title
 st.set_page_config(page_title="Growth Mindset Project", page_icon="★")
@@ -14,7 +15,7 @@ st.header("💮 Today's Growth Mindset Quote")
 st.write("Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill")
 
 # Challenge Section
-st.header("❓ What's Your Challenge Today?")
+st.header("☰ What's Your Challenge Today?")
 user_input = st.text_input("Describe a challenge you're facing:")
 
 # If user has entered a challenge
@@ -40,6 +41,20 @@ if achievement:
     st.success(f"👍 Amazing! You achieved: {achievement}")  
 else:  
     st.info("Big or small, every achievement counts! Share one now! 😉")
+
+# Need More Motivation? (Looks like a natural part of the code)
+st.header("🔥 Need More Motivation?")
+
+motivational_quotes = [
+    "Believe you can, and you're halfway there. – Theodore Roosevelt",
+    "Difficulties in life are intended to make us better, not bitter. – Dan Reeves",
+    "The only way to do great work is to love what you do. – Steve Jobs",
+    "Every day is a new beginning. Take a deep breath and start again.",
+    "Growth begins at the end of your comfort zone. – Neale Donald Walsch",
+    "Your limitation—it’s only your imagination. Push beyond it!"
+]
+
+st.info(f"💡 {random.choice(motivational_quotes)}")
 
 # Footer
 st.write("---")  
