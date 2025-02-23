@@ -6,7 +6,8 @@ Title and introduction
 
 st.title("Growth Mindset Challenge: Web App with Streamlit!")
 
-st.header("👋 Welcome to Your Growth Journey!") st.write("Embrace challenges, learn from mistakes, and unlock your full potential. This AI-powered app helps you build a growth mindset with reflection, challenges, and achievements!")
+st.header("👋 Welcome to Your Growth Journey!")
+st.write("Embrace challenges, learn from mistakes, and unlock your full potential. This AI-powered app helps you build a growth mindset with reflection, challenges, and achievements!")
 
 Quote Section
 
