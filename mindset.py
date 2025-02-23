@@ -1,48 +1,31 @@
-#  streamlit 
 import streamlit as st
 
-st.set_page_config(page_title= "growth mindset Project",project_icon="★")
-st.title("Growth Mindset challenge: web App with streamlit!")
+st.set_page_config(page_title="Growth Mindset Project", page_icon="★") st.title("Growth Mindset Challenge: Web App with Streamlit!")
 
-st.header("👋 welcome to your Growth Journey!")
-st.write("Ebrace chllenges, learn from mistakes, and  unlock your full potential..This Ai-powered app Helps  you build a growth mindset with reflection,Challenges,and achivements!►")
+st.header("👋 Welcome to Your Growth Journey!") st.write("Embrace challenges, learn from mistakes, and unlock your full potential. This AI-powered app helps you build a growth mindset with reflection, challenges, and achievements!")
 
-#  Quote section
-st.header("💮 Today's Growth Mindset Quote")
-st.write("Success is not final, failure is not fatal: it is the courage to continue that counts.-winston churchill")
+Quote Section
 
-st.header("☰ What's Your Challenge Today?")
-user_input = st.time_input("Desribe a challenge you're facing:")
+st.header("💮 Today's Growth Mindset Quote") st.write("Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill")
 
+st.header("☰ What's Your Challenge Today?") user_input = st.text_input("Describe a challenge you're facing:")
 
-#   Conditions
-if user_input:
-    st.success(f"👉 You're facing: {user_input}. keep pushing forward towords your goal!")
-else:
-    st.warning("Tell us about your challenge to get started!")
+Conditions
 
-#   Reflexing
-st.header("Reflect on your Learning ")
-reflection = st.text_area("Write your reflections here:")
+if user_input: st.success(f"👉 You're facing: {user_input}. Keep pushing forward toward your goal!") else: st.warning("Tell us about your challenge to get started!")
 
-if reflection:
-    st.success(f"✨ Great Insight! Your reflections: {reflection}")
-else:
-    st.info("Reflecting on past experience help you growth! share your difficulties")   
+Reflection Section
 
+st.header("📝 Reflect on Your Learning") reflection = st.text_area("Write your reflections here:")
 
-#   Acheivements
-st.header("👏 Celebrate Your Wins!😍")
-acheivment = st.text_input("share something you've recently accomlished: ")
+if reflection: st.success(f"✨ Great Insight! Your reflection: {reflection}") else: st.info("Reflecting on past experiences helps you grow! Share your thoughts.")
 
+Achievements Section
 
-if acheivment:
-    st.success(f"👍 Amazing! you acheived: {acheivment}")
-else:
-    st.info("Big or small , every acheivement counts! share one now!😉")    
+st.header("👏 Celebrate Your Wins! 😍") achievement = st.text_input("Share something you've recently accomplished:")
 
+if achievement: st.success(f"👍 Amazing! You achieved: {achievement}") else: st.info("Big or small, every achievement counts! Share one now! 😉")
 
-    #   Footer 
-st.write("- - - ")
-st.write("👌 keep believing in yourself. Growth is a Journey, not a destination!👈")
-st.write("**😎 Created By Nimoo khan**❤️️")    
+Footer
+
+st.write("---") st.write("👌 Keep believing in yourself. Growth is a journey, not a destination! 👈") st.write("😎 Created by Nimoo Khan ❤️")
