@@ -1,7 +1,5 @@
 import streamlit as st
 
-Set page configuration
-
 st.set_page_config(page_title="Growth Mindset Project", page_icon="★")
 
 Title and introduction
